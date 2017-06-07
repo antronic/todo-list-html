@@ -1,0 +1,62 @@
+@charset "UTF-8";
+* {
+  outline: 0 !important; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fd3454; }
+
+#todo-list-app {
+  margin-top: 2em; }
+  #todo-list-app .todo-list-card {
+    padding: 2.5em 2em 1.5em 2em;
+    background-color: #ffffff;
+    border-radius: 8px; }
+    #todo-list-app .todo-list-card .heading {
+      padding: .25em 0em;
+      border-bottom: 1px solid #ccc; }
+    #todo-list-app .todo-list-card .todo-lists {
+      max-height: 400px;
+      overflow-x: scroll;
+      margin-top: 1em;
+      box-shadow: inset 0px -10px 10px -10px rgba(25, 25, 25, 0.25); }
+      #todo-list-app .todo-list-card .todo-lists .todo-list {
+        font-size: 1.25em;
+        color: #575757;
+        border-bottom: 1px solid #ccc;
+        padding: .5em; }
+        #todo-list-app .todo-list-card .todo-lists .todo-list p {
+          margin: 0; }
+        #todo-list-app .todo-list-card .todo-lists .todo-list input[type="checkbox"] {
+          margin-top: .25em;
+          -webkit-appearance: none;
+          border: 1px solid #575757;
+          border-radius: 50%;
+          width: 1em;
+          height: 1em; }
+        #todo-list-app .todo-list-card .todo-lists .todo-list.done {
+          color: #ddd; }
+          #todo-list-app .todo-list-card .todo-lists .todo-list.done input[type="checkbox"] {
+            border: none; }
+            #todo-list-app .todo-list-card .todo-lists .todo-list.done input[type="checkbox"]:after {
+              position: absolute;
+              height: 10px;
+              width: 10px;
+              color: #ddd;
+              content: '✔'; }
+    #todo-list-app .todo-list-card .plus {
+      margin-top: 1em; }
+      #todo-list-app .todo-list-card .plus .btn-plus {
+        -webkit-appearance: none;
+        border: none;
+        background-color: transparent;
+        border-radius: 8px; }
+        #todo-list-app .todo-list-card .plus .btn-plus:hover {
+          background-color: #fd3454;
+          color: #fff;
+          padding-left: 1.5em;
+          padding-right: 1.5em; }
+
+/*# sourceMappingURL=style.css.map */
